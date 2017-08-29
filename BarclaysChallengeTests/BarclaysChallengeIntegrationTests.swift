@@ -51,7 +51,7 @@ class BarclaysChallengeIntegrationTests: XCTestCase {
             if !error.isEmpty {
                 promise.fulfill()
             }
-            XCTAssertEqual(error, "Status code is not 200 Ok")
+            XCTAssertEqual(error, "Status code is not 200")
         }
         waitForExpectations(timeout: 5, handler: nil)
     
